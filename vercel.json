@@ -1,16 +1,16 @@
 {
     "version": 2,
+    "name": "nest-server",
     "builds": [
-      {
-        "src": "src/main.ts",
-        "use": "@vercel/node",
-        "config": { "autoInstall": true } 
-      }
+        {
+            "src": "dist/main.js",
+            "use": "@vercel/node"
+        }
     ],
     "routes": [
-      {
-        "src": "/(.*)", 
-        "dest": "dist/main.js" 
-      }
+        {
+            "src": "/(.*)",
+            "dest": "dist/main.js"
+        }
     ]
-  }
+}
