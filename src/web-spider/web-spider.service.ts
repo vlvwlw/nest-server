@@ -51,7 +51,7 @@ export class WebSpiderService {
 			// console.log(videoNum.text())
 
 			let sum = 0;
-			for (let i = 0; i < pValue; i++) {
+			for (let i = 0; i < pValue -1; i++) {
 				sum += formatTime(listBox[i])
 			}
 			let totalTime = 0;
