@@ -20,7 +20,7 @@ interface GetTime extends Response{
 
 @Injectable()
 export class WebSpiderService {
-	async create(createWebSpiderDto: CreateWebSpiderDto):Promise<GetTime | Response>{
+	async create(createWebSpiderDto: CreateWebSpiderDto):Promise<any>{
 		// console.log(createWebSpiderDto)
 		try {
 			// const url = 'https://www.bilibili.com/video/BV1PY411e7J6?p=75&vd_source=c19575d88bd76125dcbaa2e11d96753f'
